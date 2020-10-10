@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/HW20-redux/static/css/main.b5732c5e.chunk.css",
+    "main.js": "/HW20-redux/static/js/main.6233c85a.chunk.js",
+    "main.js.map": "/HW20-redux/static/js/main.6233c85a.chunk.js.map",
+    "runtime-main.js": "/HW20-redux/static/js/runtime-main.ef334755.js",
+    "runtime-main.js.map": "/HW20-redux/static/js/runtime-main.ef334755.js.map",
+    "static/js/2.21d56086.chunk.js": "/HW20-redux/static/js/2.21d56086.chunk.js",
+    "static/js/2.21d56086.chunk.js.map": "/HW20-redux/static/js/2.21d56086.chunk.js.map",
+    "index.html": "/HW20-redux/index.html",
+    "precache-manifest.1d0f96b7b4fe7a5d95b4694968e89805.js": "/HW20-redux/precache-manifest.1d0f96b7b4fe7a5d95b4694968e89805.js",
+    "service-worker.js": "/HW20-redux/service-worker.js",
+    "static/css/main.b5732c5e.chunk.css.map": "/HW20-redux/static/css/main.b5732c5e.chunk.css.map",
+    "static/js/2.21d56086.chunk.js.LICENSE.txt": "/HW20-redux/static/js/2.21d56086.chunk.js.LICENSE.txt",
+    "static/media/1251845.svg": "/HW20-redux/static/media/1251845.99243e5a.svg",
+    "static/media/134932.svg": "/HW20-redux/static/media/134932.c6972b98.svg",
+    "static/media/929417.svg": "/HW20-redux/static/media/929417.01b91a1b.svg",
+    "static/media/index.css": "/HW20-redux/static/media/check-solid.e597acab.svg",
+    "static/media/star-wars-girl-power-6fca5925.jpg": "/HW20-redux/static/media/star-wars-girl-power-6fca5925.bbe4080b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef334755.js",
+    "static/js/2.21d56086.chunk.js",
+    "static/css/main.b5732c5e.chunk.css",
+    "static/js/main.6233c85a.chunk.js"
+  ]
+}
