@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "54b2ae53eb1687bbc8c910e903cbc3a1",
+    "revision": "1b87434bccbdb85dc0f7dc62cd73df12",
     "url": "/HW20-redux/index.html"
   },
   {
-    "revision": "601a46f4e97aafe2fc74",
-    "url": "/HW20-redux/static/css/main.2cbbede3.chunk.css"
+    "revision": "4e213fe533c95bb697ed",
+    "url": "/HW20-redux/static/css/main.589bf6ad.chunk.css"
   },
   {
-    "revision": "0b08beb55c8d620c9c38",
-    "url": "/HW20-redux/static/js/2.21d56086.chunk.js"
+    "revision": "7e9b1f11167d419b8be9",
+    "url": "/HW20-redux/static/js/2.6c07cfe9.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/HW20-redux/static/js/2.21d56086.chunk.js.LICENSE.txt"
+    "url": "/HW20-redux/static/js/2.6c07cfe9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "601a46f4e97aafe2fc74",
-    "url": "/HW20-redux/static/js/main.1212b9be.chunk.js"
+    "revision": "4e213fe533c95bb697ed",
+    "url": "/HW20-redux/static/js/main.9778f816.chunk.js"
   },
   {
     "revision": "03beaa8a9d3c92336b49",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c6972b988fe0baf17c4269bb5494986a",
     "url": "/HW20-redux/static/media/134932.c6972b98.svg"
+  },
+  {
+    "revision": "f5766427d718271a13afed7650738fa7",
+    "url": "/HW20-redux/static/media/454545.f5766427.svg"
   },
   {
     "revision": "01b91a1bdd82e18961f3bc2f42918fc3",
