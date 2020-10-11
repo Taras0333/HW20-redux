@@ -19,7 +19,7 @@ const mapDispatch = (dispatch) =>({
 
 const Input = connect(mapState, mapDispatch)((props) => {
     let message = props.content;
-    let aut = "";
+    let aut = props.name;
     const saveContent = (e) => {
         message = e.target.value     
     }
@@ -36,7 +36,7 @@ return(
         <label className="input-cont">Post content: <input type="text" className="inpt" onChange={saveContent}></input></label>
         <select onChange={saveAuthor} className="name-input">
             <option selected disabled>Choose the author</option>
-            <option>Anakin Skywalker</option>
+            <option >Anakin Skywalker</option>
             <option>Tonny Montana</option>
             <option>James Bond</option>
             <option>Tom Smith</option>
