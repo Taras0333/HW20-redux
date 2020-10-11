@@ -1,10 +1,9 @@
 .inputs-cont {
-  width: 100%;
-  height: 50px;
-  margin-top: 40px;
+  height: 110px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 .input-cont {
@@ -16,6 +15,7 @@
   border-radius: 7px;
   outline: none;
   border: none;
+  margin-top: 5px;
 }
 .save-btn {
   border-radius: 7px;

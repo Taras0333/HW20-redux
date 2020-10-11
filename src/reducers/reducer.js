@@ -25,7 +25,8 @@ switch(action.type){
         return{
             ...store,
             content: action.content,
-            name: action.author
+            name: action.author,
+            photo: action.photo
         }
     }
     default:{
