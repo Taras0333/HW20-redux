@@ -1,38 +1,32 @@
-import React from "react";
+import React, {useState} from "react";
 import {connect} from "react-redux";
 import "./input.css";
+import { change } from './actions';
 
 const mapState = (state) => {
     return state;
 }
-const mapDispatch = (dispatch) =>({
-    change(content, author, img){
-        dispatch({
-            type: "CHANGE_CONTENT",
-            content: content,
-            author: author,
-            photo: img
-          })
-    }
-})
+const mapDispatch ={
+    change,
+}
 
 
 
 const Input = connect(mapState, mapDispatch)((props) => {
-    let message = props.content;
-    let aut = props.name;
-    let img = props.photo;
+    const [message, setMessage] = useState(props.content);
+    const [author, setAuthor] = useState(props.name);
+    const [img, setImg] = useState(props.photo);
     const saveContent = (e) => {
-        message = e.target.value     
+        setMessage(e.target.value);      
     }
     const saveAuthor = (e) =>{
-        aut = e.target.value;
+        setAuthor(e.target.value); 
     }
     const saveImg = (e) =>{
-        img = e.target.value;
+        setImg(e.target.value);  
     }
     const change = () => {
-    props.change(message, aut, img)
+    props.change(message, author, img)
     };
 
 
