@@ -1,52 +1,38 @@
-import React from "react";
+import React, {useState} from "react";
 import {connect} from "react-redux";
+import { changeCount  } from './actions';
 
 const mapState = (state) => {
   return state;
 }
-const mapDispatch = (dispatch) =>({
-    changeCount(messagesCount, messagesActive, sharesCount, sharesActive, likesCount, likesActive){
-      dispatch({
-        type: "CHANGE_COUNT",
-        likes: messagesCount,
-        messagesActive: messagesActive,
-        sharesCount: sharesCount,
-        sharesActive: sharesActive,
-        likesCount: likesCount,
-        likesActive: likesActive
-        
-      })
-    }
-})
+const mapDispatch = {
+    changeCount,
+    
+}
 
 const RenderMain = connect(mapState, mapDispatch)((props) => {
-  let mess = props.messagesCount;
-  let messAct = props.messagesActive;
-  let shar = props.sharesCount;
-  let sharAct = props.sharesActive;
-  let like = props.likesCount;
-  let likeAct = props.likesActive;
+  
     const changeMess = () => {
-      if(messAct){
-        props.changeCount(mess + 1, !messAct, shar, sharAct, like, likeAct)
+      if(props.messagesActive){
+        props.changeCount(props.messagesCount + 1, !props.messagesActive, props.sharesCount, props.sharesActive, props.likesCount, props.likesActive)
       }else{
-        props.changeCount(mess - 1, !messAct, shar, sharAct, like, likeAct)
+        props.changeCount(props.messagesCount - 1, !props.messagesActive, props.sharesCount, props.sharesActive, props.likesCount, props.likesActive)
       }
       
     };
     const changeShares = () => {
-      if(sharAct){
-        props.changeCount(mess, messAct, shar + 1, !sharAct, like, likeAct)
+      if(props.sharesActive){
+        props.changeCount(props.messagesCount, props.messagesActive, props.sharesCount + 1, !props.sharesActive, props.likesCount, props.likesActive)
       }else{
-        props.changeCount(mess, messAct, shar - 1, !sharAct, like, likeAct)
+        props.changeCount(props.messagesCount, props.messagesActive, props.sharesCount - 1, !props.sharesActive, props.likesCount, props.likesActive)
       }
       
     };
     const changeLikes = () => {
-      if(likeAct){
-        props.changeCount(mess, messAct, shar, sharAct, like + 1, !likeAct)
+      if(props.likesActive){
+        props.changeCount(props.messagesCount, props.messagesActive, props.sharesCount, props.sharesActive, props.likesCount + 1, !props.likesActive)
       }else{
-        props.changeCount(mess, messAct, shar, sharAct, like - 1, !likeAct)
+        props.changeCount(props.messagesCount, props.messagesActive, props.sharesCount, props.sharesActive, props.likesCount - 1, !props.likesActive)
       }
       
     };
